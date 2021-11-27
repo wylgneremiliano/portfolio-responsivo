@@ -18,7 +18,6 @@ export const Content = styled.div`
   justify-content: space-between;
 `;
 export const ContentBx = styled.div`
-  min-width: 50%;
   padding-right: 20px;
 `;
 export const ContentH3 = styled.h3`
@@ -29,8 +28,6 @@ export const ContentH3 = styled.h3`
 
 export const Paragraph = styled.p``;
 
-export const W50 = styled.div`
-  min-width: 50%;
-`;
+export const W50 = styled.div``;
 
 export const Image = styled.img``;

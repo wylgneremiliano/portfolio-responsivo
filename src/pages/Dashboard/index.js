@@ -10,7 +10,7 @@ export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
   const redirect = () => {
     window.location.href =
-      "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+      'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley target="_blank" ';
   };
   useEffect(() => {
     onScroll();
