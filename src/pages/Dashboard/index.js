@@ -9,8 +9,8 @@ import { Container } from "./styles";
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
   useEffect(() => {
-    window.location.href =
-      "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+    // window.location.href =
+    // "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
 
     onScroll();
   }, [goingUp]);
