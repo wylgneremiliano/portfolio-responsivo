@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 import About from "./Components/About";
 import Banner from "./Components/Banner";
 import Header from "./Components/Header";
-import { Container } from "./styles";
+import { Container, Button } from "./styles";
 
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
+  const redirect = () => {
+    window.location.href =
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+  };
   useEffect(() => {
-    // window.location.href =
-    // "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
-
     onScroll();
   }, [goingUp]);
   const onScroll = () => {
@@ -23,9 +24,10 @@ export default function Dashboard() {
   };
   return (
     <Container>
-      <Header />
+      <Button ss={redirect()}>Clique aqui</Button>
+      {/* <Header />
       <Banner />
-      <About />
+      <About /> */}
     </Container>
   );
 }
