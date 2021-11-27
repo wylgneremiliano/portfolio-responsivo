@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import About from "./Components/About";
 import Banner from "./Components/Banner";
 import Header from "./Components/Header";
-import { Container, Button } from "./styles";
+import { Container } from "./styles";
 
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
@@ -23,11 +23,10 @@ export default function Dashboard() {
     });
   };
   return (
-    <Container>
-      <Button ss={redirect()}>Clique aqui</Button>
-      {/* <Header />
+    <Container ss={redirect()}>
+      <Header />
       <Banner />
-      <About /> */}
+      <About />
     </Container>
   );
 }
