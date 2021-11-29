@@ -1,13 +1,17 @@
 import React from "react";
 
 import Routes from "./routes";
+import { ServerStyleSheets } from "@material-ui/styles";
+
+import theme from "theme";
 import { GlobalStyle } from "./globalStyles";
+
 import "./fontsAndLinks.css";
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Routes />;
+      <Routes />
     </>
   );
 }

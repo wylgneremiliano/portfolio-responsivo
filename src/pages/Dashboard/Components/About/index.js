@@ -11,7 +11,7 @@ import {
   Paragraph,
   W50,
 } from "./styles";
-
+import "./styles.css";
 import image from "assets/img1.jpg";
 export default function About() {
   return (
@@ -20,7 +20,7 @@ export default function About() {
         <AboutMe>Sobre mim</AboutMe>
       </Heading>
       <Content>
-        <ContentBx>
+        <ContentBx className="W3">
           <ContentH3>Sou desenvolvedor web front-end.</ContentH3>
           <Paragraph>
             There are many variations of passages of Lorem Ipsum available, but
@@ -51,7 +51,7 @@ export default function About() {
             amet..", comes from a line in section 1.10.32.
           </Paragraph>
         </ContentBx>
-        <W50>
+        <W50 className="W3">
           <Image src={image} />
         </W50>
       </Content>

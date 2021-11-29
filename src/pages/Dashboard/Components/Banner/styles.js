@@ -39,6 +39,7 @@ export const AboutMe = styled.a`
   letter-spacing: 2px;
   font-weight: 500;
   cursor: pointer;
+  overflow-y: hidden;
 `;
 
 export const Span = styled.span`

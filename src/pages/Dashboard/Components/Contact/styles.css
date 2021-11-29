@@ -1,0 +1,8 @@
+.white {
+  color: #fff;
+}
+
+.formStyled {
+  display: flex;
+  flex-direction: column;
+}

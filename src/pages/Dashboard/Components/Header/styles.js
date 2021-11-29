@@ -10,6 +10,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-y: hidden;
   transition: 0.5s;
 `;
 export const Logo = styled.a`
@@ -18,6 +19,7 @@ export const Logo = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
+  transition: 0.5s;
 `;
 export const Redirect = styled.a`
   position: relative;
@@ -25,6 +27,7 @@ export const Redirect = styled.a`
   margin: 0 15px;
   color: #fff;
   text-decoration: none;
+  transition: 0.5s;
 `;
 export const Column = styled.ul`
   position: relative;
