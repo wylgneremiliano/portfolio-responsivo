@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 import About from "./Components/About";
 import Banner from "./Components/Banner";

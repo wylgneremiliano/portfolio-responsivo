@@ -9,22 +9,22 @@ export default function Header() {
       <Toggle></Toggle>
       <Column>
         <Row>
-          <Redirect>Home</Redirect>
+          <Redirect className="Logo">Home</Redirect>
         </Row>
         <Row>
-          <Redirect>Sobre</Redirect>
+          <Redirect className="Logo">Sobre</Redirect>
         </Row>
         <Row>
-          <Redirect>Serviços</Redirect>
+          <Redirect className="Logo">Serviços</Redirect>
         </Row>
         <Row>
-          <Redirect>Trabalho</Redirect>
+          <Redirect className="Logo">Trabalho</Redirect>
         </Row>
         <Row>
-          <Redirect>Não sei ainda</Redirect>
+          <Redirect className="Logo">Não sei ainda</Redirect>
         </Row>
         <Row>
-          <Redirect>Contato</Redirect>
+          <Redirect className="Logo">Contato</Redirect>
         </Row>
       </Column>
     </Container>

@@ -22,20 +22,18 @@ export const Logo = styled.a`
   transition: 0.5s;
 `;
 export const Redirect = styled.a`
-  position: relative;
-  display: inline-block;
-  margin: 0 15px;
   color: #fff;
-  text-decoration: none;
+  margin: 0 15px;
   transition: 0.5s;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
 `;
-export const Column = styled.ul`
+export const Column = styled.li`
   position: relative;
   display: flex;
+  height: 100%;
 `;
-export const Row = styled.li`
-  position: relative;
-  list-style: none;
-`;
+export const Row = styled.div``;
 
 export const Toggle = styled.div``;
