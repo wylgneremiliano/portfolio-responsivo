@@ -19,13 +19,14 @@ import {
   Text,
   Box,
   FormBx,
+  InfoContainer,
 } from "./styles";
 import "./styles.css";
 import ButtonComponent from "Components/Button";
 
 export default function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Heading className="white">
         <ContactMe className="white">Contato</ContactMe>
         <Paragraph>Entre em contato preenchendo o formulário abaixo</Paragraph>
@@ -39,8 +40,11 @@ export default function Contact() {
                 <LocationOnIcon />
               </Icon>
               <Text>
-                <ContactInfoH3>Endereço</ContactInfoH3>
+                <ContactInfoH3 style={{ color: "#2196f3" }}>
+                  Endereço
+                </ContactInfoH3>
               </Text>
+
               <Paragraph>
                 Rua João XXIII, <br /> Lagoa Grande, Minas Gerais, <br /> 165
               </Paragraph>
@@ -50,8 +54,11 @@ export default function Contact() {
                 <PhoneIcon />
               </Icon>
               <Text>
-                <ContactInfoH3>Telefone</ContactInfoH3>
+                <ContactInfoH3 style={{ color: "#2196f3" }}>
+                  Telefone
+                </ContactInfoH3>
               </Text>
+
               <Paragraph>+55 34 9 9706-5494</Paragraph>
             </Box>
             <Box>
@@ -59,7 +66,9 @@ export default function Contact() {
                 <MailOutlineIcon />
               </Icon>
               <Text>
-                <ContactInfoH3>Email</ContactInfoH3>
+                <ContactInfoH3 style={{ color: "#2196f3" }}>
+                  Email
+                </ContactInfoH3>
               </Text>
               <Paragraph>wylgneremiliano@gmail.com</Paragraph>
             </Box>
@@ -83,11 +92,11 @@ export default function Contact() {
               variant="outlined"
             />
             <TextAreaComponent
-              placeholder="Sua Mensagem"
-              style={{ width: 200, color: "#fff" }}
+              placeholder="Your message"
+              style={{ width: "100%", color: "#fff" }}
               name="message"
             />
-            <ButtonComponent variant="contained">TEste</ButtonComponent>
+            <ButtonComponent width={20}>Send</ButtonComponent>
           </Form>
         </FormBx>
       </Content>

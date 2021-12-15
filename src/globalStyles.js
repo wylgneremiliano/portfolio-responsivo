@@ -28,4 +28,6 @@ export const GlobalStyle = createGlobalStyle`
   scrollbar-color: #ccc #111;
     scrollbar-width: thin;
   }
+
+ 
 `;

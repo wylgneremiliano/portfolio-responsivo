@@ -24,8 +24,9 @@ export default function Dashboard() {
       setGoingUp(header);
     });
   };
+
   return (
-    <Container>
+    <Container id="home">
       <Header />
       <Banner />
       <About />

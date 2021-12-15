@@ -1,6 +1,29 @@
 import styled from "styled-components";
 export const Container = styled.section`
-  padding: 100px;
+  width: 100vw;
+  padding: 20px 100px;
+  @media (max-width: 991px) {
+    h2 {
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width: 500px) {
+    font-size: 24px;
+    padding: 20px 40px;
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 15px;
+      text-align: center;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 `;
 export const Heading = styled.div`
   width: 100%;
@@ -16,9 +39,28 @@ export const AboutMe = styled.h2`
 export const Content = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 991px) {
+    flex-direction: column;
+    div {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    div {
+      max-width: 100%;
+      padding-right: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
 `;
 export const ContentBx = styled.div`
   padding-right: 20px;
+  max-width: 50%;
+
+  margin-bottom: 20px;
 `;
 export const ContentH3 = styled.h3`
   font-size: 24px;
@@ -26,8 +68,13 @@ export const ContentH3 = styled.h3`
   color: #111;
 `;
 
-export const Paragraph = styled.p``;
+export const Paragraph = styled.p`
+  text-align: justify;
+  text-justify: inter-word;
+`;
 
-export const W50 = styled.div``;
+export const W50 = styled.div`
+  max-width: 50%;
+`;
 
 export const Image = styled.img``;

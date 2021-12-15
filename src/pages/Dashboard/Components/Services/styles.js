@@ -1,8 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 100px;
+  padding: 20px 100px;
   background-color: #111;
+
+  @media (max-width: 991px) {
+    padding: 150px 50px 100px;
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 20;
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 50px;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 export const Heading = styled.div`
@@ -13,10 +32,13 @@ export const Heading = styled.div`
 `;
 export const AboutMe = styled.h2`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 30px;
+  color: #fff;
 `;
 
-export const Paragraph = styled.p``;
+export const Paragraph = styled.p`
+  color: #fff;
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -30,6 +52,12 @@ export const ServicesBx = styled.div`
   color: #fff;
   max-width: 340px;
   margin: 20px;
+  @media (max-width: 991px) {
+    margin: 10px;
+  }
+  @media (max-width: 500px) {
+    margin: 10px 0;
+  }
   text-align: center;
   cursor: pointer;
   :hover {

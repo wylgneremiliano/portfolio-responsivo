@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 100px;
+  padding: 20px 100px;
   background-color: #111;
 `;
 
 export const Content = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 `;
 export const ContactInfoBx = styled.div``;
@@ -25,28 +25,40 @@ export const Image = styled.img`
 export const Heading = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   text-align: center;
   margin-bottom: 30px;
   color: #111;
 `;
-export const ContactMe = styled.h2`
+export const ContactMe = styled.h1`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 30px;
 `;
 export const ContactInfoH3 = styled.h3`
-  color: #fff;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  color: #fff;
 `;
 export const Paragraph = styled.p`
   color: #fff;
 `;
 
 export const Icon = styled.div`
+  position: absolute;
+  left: 0;
+  top: 5px;
   color: #fff;
 `;
 
 export const Text = styled.div``;
 
-export const Box = styled.div``;
+export const Box = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  :first-child {
+    margin-top: 50px;
+  }
+  margin-top: 15px;
+  margin-bottom: 15px;
+`;

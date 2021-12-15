@@ -3,7 +3,7 @@ import { TextField } from "@mui/material";
 
 export const Container = styled.div`
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   align-items: center;
   justify-content: center;
 `;
@@ -11,6 +11,7 @@ export const Container = styled.div`
 export const InputCustom = styled(TextField)`
   width: 100%;
   padding: 15px;
+  border-radius: 5px;
   font-size: 16px;
   background: transparent;
   border: none;

@@ -6,8 +6,7 @@ export const Container = styled.section`
 
   flex-direction: column;
   align-items: center;
-
-  padding: 100px;
+  padding: 20px 100px;
 `;
 
 export const Heading = styled.div`
@@ -20,7 +19,7 @@ export const Heading = styled.div`
 `;
 export const AboutMe = styled.h2`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 30px;
 `;
 
 export const Paragraph = styled.p``;

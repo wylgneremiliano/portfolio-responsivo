@@ -15,7 +15,7 @@ import "./styles.css";
 import image from "assets/img1.jpg";
 export default function About() {
   return (
-    <Container>
+    <Container id="about">
       <Heading>
         <AboutMe>Sobre mim</AboutMe>
       </Heading>

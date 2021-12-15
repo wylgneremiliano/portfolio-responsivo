@@ -6,3 +6,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.MuiButton-root {
+  margin-bottom: 20;
+  font-weight: "bold";
+}

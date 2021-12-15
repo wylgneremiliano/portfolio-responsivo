@@ -10,6 +10,35 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   padding: 100px;
+  @media (max-width: 991px) {
+    padding: 150px 50px 100px;
+    h2 {
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    a {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 50px;
+
+    h2 {
+      font-size: 1.2em;
+    }
+    h3 {
+      font-size: 0.9em;
+    }
+    a {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
 `;
 
 export const TextContainer = styled.div``;
