@@ -27,7 +27,7 @@ export default function Dashboard() {
 
   return (
     <Container id="home">
-      <Header />
+      <Header id="header" />
       <Banner />
       <About />
       <Services />
