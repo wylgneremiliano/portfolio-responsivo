@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^6.5.4",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.12.3",
@@ -38,9 +39,9 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 1 version",
+      "> 1%",
+      "IE 10"
     ],
     "development": [
       "last 1 chrome version",
@@ -48,4 +49,5 @@
       "last 1 safari version"
     ]
   }
+ 
 }
