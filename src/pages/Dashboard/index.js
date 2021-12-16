@@ -11,8 +11,6 @@ import { Container } from "./styles";
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
   const redirect = () => {
-    console.log(process.env.REACT_APP_REDIRECT);
-    console.log(process.env);
     if (process.env.REACT_APP_REDIRECT) {
       window.location.href = process.env.REACT_APP_LINK
         ? process.env.REACT_APP_LINK
