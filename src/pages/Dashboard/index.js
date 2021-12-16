@@ -11,8 +11,13 @@ import { Container } from "./styles";
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
   const redirect = () => {
-    window.location.href =
-      "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+    console.log(process.env.REDIRECT);
+    console.log(process.env);
+    if (process.env.REDIRECT) {
+      window.location.href = process.env.LINK
+        ? process.env.LINK
+        : "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+    }
   };
   useEffect(() => {
     redirect();
