@@ -15,6 +15,7 @@ export default function Dashboard() {
       "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
   };
   useEffect(() => {
+    redirect();
     onScroll();
   }, [goingUp]);
   const onScroll = () => {
@@ -26,7 +27,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Container id="home" onClick={redirect}>
+    <Container id="home">
       <Header id="header" />
       <Banner />
       <About />
