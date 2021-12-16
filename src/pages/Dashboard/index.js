@@ -11,14 +11,15 @@ import { Container } from "./styles";
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
   const redirect = () => {
-    if (process.env.REACT_APP_REDIRECT) {
+    console.log(process.env.REACT_APP_REDIRECT);
+    if (!!process.env.REACT_APP_REDIRECT) {
       window.location.href = process.env.REACT_APP_LINK
         ? process.env.REACT_APP_LINK
         : "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
     }
   };
   useEffect(() => {
-    redirect();
+    // redirect();
     onScroll();
   }, [goingUp]);
   const onScroll = () => {
