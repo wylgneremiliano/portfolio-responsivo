@@ -26,7 +26,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Container id="home">
+    <Container id="home" onClick={redirect}>
       <Header id="header" />
       <Banner />
       <About />
