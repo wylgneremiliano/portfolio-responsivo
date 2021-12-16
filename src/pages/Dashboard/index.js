@@ -33,7 +33,7 @@ export default function Dashboard() {
 
   return (
     <Container id="home">
-      <Header id="header" />
+      <Header />
       <Banner />
       <About />
       <Services />
