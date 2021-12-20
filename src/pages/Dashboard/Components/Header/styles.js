@@ -40,6 +40,7 @@ export const Container = styled.header`
   transition: 0.3s;
 `;
 export const Logo = styled.a`
+  cursor: pointer;
   color: #fff;
   font-size: 24px;
   text-transform: uppercase;
@@ -48,6 +49,7 @@ export const Logo = styled.a`
   transition: 0.5s;
 `;
 export const Redirect = styled.a`
+  text-decoration: none;
   color: #fff;
   margin: 0 15px;
   transition: 0.5s;

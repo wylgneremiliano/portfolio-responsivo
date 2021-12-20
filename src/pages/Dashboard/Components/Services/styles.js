@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 20px 100px;
+  padding: 100px;
   background-color: #111;
 
   @media (max-width: 991px) {
@@ -14,7 +14,7 @@ export const Container = styled.section`
     }
   }
   @media (max-width: 500px) {
-    padding: 50px;
+    padding: 150px 50px 100px;
     h2 {
       font-size: 20px;
     }

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const Container = styled.section`
-  width: 100vw;
-  padding: 20px 100px;
+  padding: 100px;
   @media (max-width: 991px) {
     h2 {
       font-size: 2em;
@@ -12,7 +11,7 @@ export const Container = styled.section`
   }
   @media (max-width: 500px) {
     font-size: 24px;
-    padding: 20px 40px;
+    padding: 100px 40px;
     h2 {
       font-size: 20px;
     }
@@ -57,7 +56,6 @@ export const Content = styled.div`
   }
 `;
 export const ContentBx = styled.div`
-  padding-right: 20px;
   max-width: 50%;
   @media (max-width: 991px) {
     max-width: 100%;

@@ -26,33 +26,12 @@ export default function Header() {
       setScrollListener(window.scrollY > 75);
     });
   };
-  const redirectHome = () => {
-    window.scrollTo(0, 0);
-    setToogleButton(false);
-  };
-  const redirectAbout = () => {
-    const about = document.querySelector("#about");
-    window.scrollTo(0, about.scrollHeight + 220);
-    setToogleButton(false);
-  };
-  const redirectServices = () => {
-    const services = document.querySelector("#services");
-    window.scrollTo(0, services.scrollHeight + 500);
-    setToogleButton(false);
-  };
-  const redirectWork = () => {
-    const work = document.querySelector("#work");
-    window.scrollTo(0, work.scrollHeight + 450);
-    setToogleButton(false);
-  };
-  const redirectContact = () => {
-    const contact = document.querySelector("#contact");
-    window.scrollTo(0, contact.scrollHeight + 285);
-    setToogleButton(false);
-  };
+
   return (
     <Container>
-      <Logo className="Logo">Portfolio</Logo>
+      <Logo className="Logo" href="#home">
+        Portfolio
+      </Logo>
       {toogleButton ? (
         <CloseButton
           onClick={() => setToogleButton(false)}
@@ -68,27 +47,27 @@ export default function Header() {
 
       <Column toogleButton={toogleButton}>
         <Row>
-          <Redirect className="Logo" onClick={() => redirectHome()}>
+          <Redirect className="Logo" href="#home">
             Home
           </Redirect>
         </Row>
         <Row>
-          <Redirect className="Logo" onClick={() => redirectAbout()}>
+          <Redirect className="Logo" href="#about">
             Sobre
           </Redirect>
         </Row>
         <Row>
-          <Redirect className="Logo" onClick={() => redirectServices()}>
+          <Redirect className="Logo" href="#services">
             Serviços
           </Redirect>
         </Row>
         <Row>
-          <Redirect className="Logo" onClick={() => redirectWork()}>
+          <Redirect className="Logo" href="#work">
             Trabalho
           </Redirect>
         </Row>
         <Row>
-          <Redirect className="Logo" onClick={() => redirectContact()}>
+          <Redirect className="Logo" href="#contact">
             Contato
           </Redirect>
         </Row>
