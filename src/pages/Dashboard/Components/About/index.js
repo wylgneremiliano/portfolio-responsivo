@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Lottie from "react-lottie";
 
 import {
   AboutMe,
@@ -7,20 +8,31 @@ import {
   ContentBx,
   ContentH3,
   Heading,
-  Image,
   Paragraph,
   W50,
 } from "./styles";
-import "./styles.css";
-import image from "assets/img1.jpg";
+
+import animationData from "assets/web-development.json";
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 export default function About() {
+  const [animationState, setAnimationState] = useState({
+    isStopped: false,
+    isPaused: false,
+  });
   return (
     <Container id="about">
       <Heading>
         <AboutMe>Sobre mim</AboutMe>
       </Heading>
       <Content>
-        <ContentBx className="W3">
+        <ContentBx>
           <ContentH3>Sou desenvolvedor web front-end.</ContentH3>
           <Paragraph>
             There are many variations of passages of Lorem Ipsum available, but
@@ -51,8 +63,14 @@ export default function About() {
             amet..", comes from a line in section 1.10.32.
           </Paragraph>
         </ContentBx>
-        <W50 className="W3">
-          <Image src={image} />
+        <W50>
+          <Lottie
+            options={defaultOptions}
+            height={400}
+            width={400}
+            isStopped={animationState.isStopped}
+            isPaused={animationState.isPaused}
+          />
         </W50>
       </Content>
     </Container>

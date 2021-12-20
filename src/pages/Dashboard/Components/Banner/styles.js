@@ -75,3 +75,7 @@ export const Span = styled.span`
   font-size: 1.5em;
   font-weight: 700;
 `;
+
+export const AnimationContainer = styled.div`
+  pointer-events: none;
+`;

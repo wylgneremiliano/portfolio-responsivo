@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-
+import Lottie from "react-lottie";
 import { Form } from "@unform/web";
 import InputComponent from "Components/Input";
 import TextAreaComponent from "Components/TextArea";
@@ -19,12 +19,35 @@ import {
   Text,
   Box,
   FormBx,
-  InfoContainer,
+  AnimationContainer,
 } from "./styles";
 import "./styles.css";
-import ButtonComponent from "Components/Button";
-
+import animationData from "assets/send-button.json";
+const defaultOptions = {
+  loop: false,
+  autoplay: false,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 export default function Contact() {
+  const [animationState, setAnimationState] = useState({
+    isStopped: true,
+    isPaused: false,
+  });
+  const toogleAnimation = () => {
+    setAnimationState({
+      ...animationState,
+      isStopped: false,
+    });
+    setTimeout(() => {
+      setAnimationState({
+        ...animationState,
+        isStopped: true,
+      });
+    }, 1600);
+  };
   return (
     <Container id="contact">
       <Heading className="white">
@@ -96,7 +119,15 @@ export default function Contact() {
               style={{ width: "100%", color: "#fff" }}
               name="message"
             />
-            <ButtonComponent width={20}>Send</ButtonComponent>
+            <AnimationContainer onClick={() => toogleAnimation()}>
+              <Lottie
+                options={defaultOptions}
+                height={70}
+                width={250}
+                isStopped={animationState.isStopped}
+                isPaused={animationState.isPaused}
+              />
+            </AnimationContainer>
           </Form>
         </FormBx>
       </Content>

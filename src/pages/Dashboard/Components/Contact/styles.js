@@ -62,3 +62,9 @@ export const Box = styled.div`
   margin-top: 15px;
   margin-bottom: 15px;
 `;
+export const AnimationContainer = styled.div`
+  display: flex;
+  align-self: flex-start;
+  cursor: pointer;
+  transform: translateX(-40px);
+`;

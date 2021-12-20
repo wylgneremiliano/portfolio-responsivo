@@ -38,7 +38,7 @@ export const AboutMe = styled.h2`
 
 export const Content = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   @media (max-width: 991px) {
     flex-direction: column;
     div {
@@ -59,7 +59,12 @@ export const Content = styled.div`
 export const ContentBx = styled.div`
   padding-right: 20px;
   max-width: 50%;
-
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+  @media (max-width: 500px) {
+    max-width: 100%;
+  }
   margin-bottom: 20px;
 `;
 export const ContentH3 = styled.h3`
@@ -74,7 +79,7 @@ export const Paragraph = styled.p`
 `;
 
 export const W50 = styled.div`
-  max-width: 50%;
+  pointer-events: none;
 `;
 
 export const Image = styled.img``;
