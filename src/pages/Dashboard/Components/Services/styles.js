@@ -14,7 +14,7 @@ export const Container = styled.section`
     }
   }
   @media (max-width: 500px) {
-    padding: 150px 50px 100px;
+    padding: 150px 25px 100px;
     h2 {
       font-size: 20px;
     }
