@@ -25,7 +25,7 @@ export default function Dashboard() {
   const onScroll = () => {
     window.addEventListener("scroll", () => {
       const header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
+      header.classList.toggle("sticky", window.scrollY > 800);
       setGoingUp(header);
     });
   };

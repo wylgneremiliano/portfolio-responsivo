@@ -23,7 +23,7 @@ export default function Header() {
   }, [scrollListener]);
   const onScroll = () => {
     window.addEventListener("scroll", () => {
-      setScrollListener(window.scrollY > 75);
+      setScrollListener(window.scrollY > 800);
     });
   };
 
