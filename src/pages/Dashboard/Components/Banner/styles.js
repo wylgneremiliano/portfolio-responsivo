@@ -3,7 +3,7 @@ import logo from "assets/banner.jpg";
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;
-  background: ${`url(${logo})`};
+  background: #000;
   background-size: cover;
   background-position: right;
   display: flex;
