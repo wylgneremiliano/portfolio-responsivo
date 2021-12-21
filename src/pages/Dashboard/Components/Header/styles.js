@@ -8,6 +8,7 @@ export const Container = styled.header`
   left: 0;
   width: 100%;
   padding: 20px 100px;
+
   @media only screen and (max-width: 991px) {
     padding: 20px 50px;
   }

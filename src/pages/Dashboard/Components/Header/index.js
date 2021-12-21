@@ -23,12 +23,12 @@ export default function Header() {
   }, [scrollListener]);
   const onScroll = () => {
     window.addEventListener("scroll", () => {
-      setScrollListener(window.scrollY > 800);
+      setScrollListener(window.scrollY > 75);
     });
   };
 
   return (
-    <Container>
+    <Container background={scrollListener}>
       <Logo className="Logo" href="#home">
         Portfolio
       </Logo>
