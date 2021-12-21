@@ -38,9 +38,6 @@ export default function Work() {
           <Image src={logo4}></Image>
         </WorkBx>
       </Content>
-      <Redirect href="#">
-        <Btn>Ver mais</Btn>
-      </Redirect>
     </Container>
   );
 }

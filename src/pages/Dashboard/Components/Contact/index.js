@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import Lottie from "react-lottie";
+
 import { Form } from "@unform/web";
-import Button from "Components/Button";
+import Swal from "sweetalert2";
 import InputComponent from "Components/Input";
 import TextAreaComponent from "Components/TextArea";
 import {
@@ -23,32 +23,8 @@ import {
   ButtonCustom,
 } from "./styles";
 import "./styles.css";
-import animationData from "assets/send-button.json";
-const defaultOptions = {
-  loop: false,
-  autoplay: false,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
+import dogAnimation from "assets/dogAnimation.gif";
 export default function Contact() {
-  const [animationState, setAnimationState] = useState({
-    isStopped: true,
-    isPaused: false,
-  });
-  const toogleAnimation = () => {
-    setAnimationState({
-      ...animationState,
-      isStopped: false,
-    });
-    setTimeout(() => {
-      setAnimationState({
-        ...animationState,
-        isStopped: true,
-      });
-    }, 1600);
-  };
   return (
     <Container id="contact">
       <Heading className="white">
@@ -120,7 +96,25 @@ export default function Contact() {
               style={{ width: "100%", color: "#fff" }}
               name="message"
             />
-            <ButtonCustom>Enviar</ButtonCustom>
+            <ButtonCustom
+              onClick={() =>
+                Swal.fire({
+                  confirmButtonColor: "#3586ff",
+                  title: "Mensagem recebida!",
+                  backdrop: `rgba(0,0,0,0.7)
+                  url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                  left bottom
+                  no-repeat`,
+                  text: "Obrigado por entrar em contato, já já te respondo :D ",
+                  imageUrl: `${dogAnimation}`,
+                  imageWidth: 200,
+                  imageHeight: 200,
+                  imageAlt: "Custom image",
+                })
+              }
+            >
+              Enviar
+            </ButtonCustom>
           </Form>
         </FormBx>
       </Content>

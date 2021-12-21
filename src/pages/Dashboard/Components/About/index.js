@@ -10,6 +10,7 @@ import {
   Heading,
   Paragraph,
   W50,
+  Redirect,
 } from "./styles";
 
 import animationData from "assets/web-development.json";
@@ -35,32 +36,44 @@ export default function About() {
         <ContentBx>
           <ContentH3>Sou desenvolvedor front-end.</ContentH3>
           <Paragraph>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn't anything embarrassing hidden in the
-            middle of text. All the Lorem Ipsum generators on the Internet tend
-            to repeat predefined chunks as necessary, making this the first true
-            generator on the Internet. It uses a dictionary of over 200 Latin
-            words, combined with a handful of model sentence structures, to
-            generate Lorem Ipsum which looks reasonable. The generated Lorem
-            Ipsum is therefore always free from repetition, injected humour, or
-            non-characteristic words etc.
+            Não me esqueço da primeira vez que tive contato com programação, um
+            amigo meu me pediu para ir em sua casa, quando cheguei lá, ele
+            estava com várias coisas abertas no computador dele me dizendo que
+            queria criar um jogo e que era para ajudar ele, na minha cabeça era
+            uma coisa muito complexa, por mais que o jogo fosse simples. Nessa
+            ocasião se tratava de um jogo em 2D estilo Mario. Quando a gente
+            começou a ver como aquilo funcionava e tudo fazia muito sentido
+            fiquei muito animado, principalmente quando o desenvolvimento do
+            jogo tomava forma, as animações, a interação, tudo era muito
+            empolgante. Isso eu tinha por volta dos 16 anos. Quando me formei no
+            ensino médio, não tinha dúvidas no que iria ingressar na faculdade.
+            Logo comecei Análise e desenvolvimento de sistemas, onde me dei
+            muito bem com a área de programação, comecei a aprender o básico da
+            linguagem C, depois passei para Java e por fim PHP, onde minha
+            carreira profissional começaria. Logo depois que finalizei a
+            faculdade me mudei para uma cidade maior a procura do meu primeiro
+            emprego. Fiz alguns trabalhos com PHP, mas não me agradava muito
+            alguns pontos com a proposta do PHP. Foi quando fui procurar outras
+            tecnologias para desenvolvimento web e me deparei com o React. O
+            conceito de SPA e a facilidade de manipular estados sem precisar
+            recarregar a página por completo me ganharam, além disso tem o
+            react-native para mobile, bem completinho esse segmento, sem contar
+            que tem o Node.js que ta tudo ali no javascript. Hoje desenvolvo em
+            React à 2 anos e meio, aprendi muita coisa nesse tempo, errei muito,
+            tive meus acertos e continuo sempre em evolução. No tópico de
+            habilidades vou detalhar melhor as tecnologias que domino. Aqui é
+            uma breve apresentação sobre minha história.
             <br />
             <br />
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32.
+            Vamos lá, vou falar um pouco sobre minha personalidade. Sou uma
+            pessoa bem simples, bem curioso, paciente e gosto de ficar na paz.
+            Sou daquele tipo de pessoa que conversa muito e bem fácil de
+            conviver, detalhe é que eu sempre trabalhei remotamente, já estou
+            bem habituado. Nas horas vagas gosto de ir na academia, também gosto
+            de jogar alguns jogos como CSGO e The Witcher, se você está
+            interessado em me conhecer melhor, não se acanhe e vá para a sessão{" "}
+            <Redirect href="#contact">CONTATO</Redirect> e venha saber mais
+            sobre mim :D
           </Paragraph>
         </ContentBx>
         <W50>

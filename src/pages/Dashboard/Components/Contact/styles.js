@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Button from "Components/Button";
 
 export const Container = styled.section`
-  padding: 20px;
-  padding-top: 100px;
+  padding: 100px 20px;
+  margin-bottom: 100px;
   background-color: #111;
 `;
 

@@ -18,7 +18,7 @@ export default function Banner() {
           <br /> <Span>Wylgner Emiliano.</Span>
         </Title>
         <SubTitle>Desenvolvedor front-end.</SubTitle>
-        <AboutMe>Sobre mim</AboutMe>
+        <AboutMe href="#about">Sobre mim</AboutMe>
       </TextContainer>
     </Container>
   );

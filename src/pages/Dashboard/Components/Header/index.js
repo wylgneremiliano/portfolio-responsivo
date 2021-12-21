@@ -58,7 +58,7 @@ export default function Header() {
         </Row>
         <Row>
           <Redirect className="Logo" href="#services">
-            Serviços
+            Habilidades
           </Redirect>
         </Row>
         <Row>

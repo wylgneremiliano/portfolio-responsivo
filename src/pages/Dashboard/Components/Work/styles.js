@@ -20,6 +20,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   padding: 100px;
+  background-color: #f2f2f2;
 `;
 
 export const Heading = styled.div`

@@ -7,6 +7,7 @@ import Services from "./Components/Services";
 import Work from "./Components/Work";
 import Contact from "./Components/Contact";
 import { Container } from "./styles";
+import Footer from "./Components/Footer";
 
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
@@ -38,6 +39,7 @@ export default function Dashboard() {
       <Services />
       <Work />
       <Contact />
+      <Footer />
     </Container>
   );
 }

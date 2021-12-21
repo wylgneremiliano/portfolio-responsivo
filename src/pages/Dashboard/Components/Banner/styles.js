@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "assets/banner.jpg";
+
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;

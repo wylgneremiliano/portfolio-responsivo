@@ -20,10 +20,8 @@ export default function Works() {
   return (
     <Container id="services">
       <Heading className="white">
-        <AboutMe>Outros serviços</AboutMe>
-        <Paragraph>
-          Contrary to popular belief, Lorem Ipsum is not simply random text.
-        </Paragraph>
+        <AboutMe>Habilidades</AboutMe>
+        <Paragraph>As principais tecnologias que trabalho hoje</Paragraph>
       </Heading>
       <Content>
         <ServicesBx>

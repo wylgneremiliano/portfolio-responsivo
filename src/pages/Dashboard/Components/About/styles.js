@@ -23,6 +23,7 @@ export const Container = styled.section`
       font-size: 12px;
     }
   }
+  background-color: #f2f2f2;
 `;
 export const Heading = styled.div`
   width: 100%;
@@ -81,3 +82,10 @@ export const W50 = styled.div`
 `;
 
 export const Image = styled.img``;
+
+export const Redirect = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+`;
