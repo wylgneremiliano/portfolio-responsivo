@@ -17,7 +17,7 @@ export default function Banner() {
           Oi, eu sou
           <br /> <Span>Wylgner Emiliano.</Span>
         </Title>
-        <SubTitle>Sou desenvolvedor web front-end.</SubTitle>
+        <SubTitle>Desenvolvedor web front-end.</SubTitle>
         <AboutMe>Sobre mim</AboutMe>
       </TextContainer>
     </Container>
