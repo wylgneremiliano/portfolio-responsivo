@@ -3,7 +3,20 @@ import { shade } from "polished";
 
 export const Container = styled.section`
   display: flex;
-
+  @media (max-width: 500px) {
+    font-size: 24px;
+    padding: 90px 20px;
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 15px;
+      text-align: center;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
   flex-direction: column;
   align-items: center;
   padding: 100px;
@@ -20,6 +33,9 @@ export const Heading = styled.div`
 export const AboutMe = styled.h2`
   font-weight: 600;
   font-size: 30px;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 export const Paragraph = styled.p``;
@@ -27,10 +43,20 @@ export const Paragraph = styled.p``;
 export const Content = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
   flex-wrap: wrap;
 `;
 export const WorkBx = styled.div`
   width: 50%;
+  /* @media (max-width: 991px) {
+    width: 50%;
+  } */
+  @media (max-width: 500px) {
+    width: 100vw;
+    padding: 5px 15px;
+  }
   padding: 20px;
 `;
 export const Image = styled.img`
