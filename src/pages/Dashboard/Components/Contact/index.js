@@ -4,6 +4,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Lottie from "react-lottie";
 import { Form } from "@unform/web";
+import Button from "Components/Button";
 import InputComponent from "Components/Input";
 import TextAreaComponent from "Components/TextArea";
 import {
@@ -19,7 +20,7 @@ import {
   Text,
   Box,
   FormBx,
-  AnimationContainer,
+  ButtonCustom,
 } from "./styles";
 import "./styles.css";
 import animationData from "assets/send-button.json";
@@ -119,15 +120,7 @@ export default function Contact() {
               style={{ width: "100%", color: "#fff" }}
               name="message"
             />
-            <AnimationContainer onClick={() => toogleAnimation()}>
-              <Lottie
-                options={defaultOptions}
-                height={70}
-                width={250}
-                isStopped={animationState.isStopped}
-                isPaused={animationState.isPaused}
-              />
-            </AnimationContainer>
+            <ButtonCustom>Enviar</ButtonCustom>
           </Form>
         </FormBx>
       </Content>

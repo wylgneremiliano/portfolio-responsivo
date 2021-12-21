@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from "Components/Button";
 
 export const Container = styled.section`
   padding: 20px;
@@ -38,9 +39,15 @@ export const ContactInfoH3 = styled.h3`
   font-size: 20px;
   margin-bottom: 5px;
   color: #fff;
+  @media (max-width: 500px) {
+    margin-bottom: 10px;
+  }
 `;
 export const Paragraph = styled.p`
   color: #fff;
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 export const Icon = styled.div`
@@ -68,4 +75,14 @@ export const AnimationContainer = styled.div`
   align-self: flex-start;
   cursor: pointer;
   transform: translateX(-40px);
+`;
+
+export const ButtonCustom = styled(Button)`
+  width: 35%;
+  @media (max-width: 991px) {
+    width: 50%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
