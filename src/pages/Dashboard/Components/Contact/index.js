@@ -84,7 +84,7 @@ export default function Contact() {
               type="text"
               name="full_name"
               id="standard-basic"
-              label="Full Name"
+              label="Nome Completo"
               variant="outlined"
             />
             <InputComponent
@@ -97,7 +97,8 @@ export default function Contact() {
             <TextAreaComponent
               placeholder="Your message"
               style={{ width: "100%", color: "#fff" }}
-              name="message"
+              name="Mensagem"
+              maxlength="250"
             />
             <ButtonCustom
               onClick={() =>

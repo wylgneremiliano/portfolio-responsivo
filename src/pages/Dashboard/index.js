@@ -37,7 +37,7 @@ export default function Dashboard() {
       <Banner />
       <About />
       <Services />
-      <Work />
+      {/* <Work /> */}
       <Contact />
       <Footer />
     </Container>

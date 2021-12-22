@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { TextareaAutosize } from "@mui/base";
 
 export const InputCustom = styled.textarea`
   resize: none;
   width: 100%;
-  padding: 120px 15px;
+  padding: 120px 10px;
   padding-top: 10px;
   font-size: 16px;
   background: transparent;
@@ -15,6 +14,6 @@ export const InputCustom = styled.textarea`
   border-radius: 5px;
   :focus {
     outline: none !important;
-    border: 1px solid #d863bb;
+    border: 2px solid #d863bb;
   }
 `;

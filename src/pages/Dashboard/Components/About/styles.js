@@ -23,6 +23,7 @@ export const Container = styled.section`
       font-size: 12px;
     }
   }
+  background-color: #383a59;
 `;
 export const Heading = styled.div`
   width: 100%;

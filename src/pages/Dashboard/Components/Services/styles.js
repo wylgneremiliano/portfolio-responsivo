@@ -20,7 +20,7 @@ export const Container = styled.section`
       font-size: 15px;
     }
   }
-  background-color: #383a59;
+  background-color: #282a36;
 `;
 
 export const Heading = styled.div`
@@ -53,7 +53,7 @@ export const ServiceBox = styled.div`
   cursor: pointer;
   width: 400px;
   height: 300px;
-  background-color: #282a36;
+  background-color: #383a59;
   border-radius: 10px;
   overflow: hidden;
   .icon ion-icon {
@@ -151,8 +151,8 @@ export const Ball = styled.div`
     props.status === "complete"
       ? "#D863BB"
       : props.status === "active"
-      ? "#373737"
-      : "#373737"}; ;
+      ? "#383A59"
+      : "#383A59"}; ;
 `;
 
 export const ProgressIndicator = styled.div`
@@ -175,7 +175,7 @@ export const CardIndicator = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: #282a36;
+  background-color: #383a59;
   p {
     font-size: 10px;
 
@@ -219,6 +219,6 @@ export const BallInside = styled.div`
     props.status === "complete"
       ? "#D863BB"
       : props.status === "active"
-      ? "#373737"
-      : "#373737"}; ;
+      ? "#383A59"
+      : "#383A59"}; ;
 `;
