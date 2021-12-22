@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   border: none;
   font-weight: bold;
+  border-radius: 5px;
   color: #fff;
   width: ${(props) => (props.width ? `${props.width}%` : "100%")};
   background-color: #d863bb;

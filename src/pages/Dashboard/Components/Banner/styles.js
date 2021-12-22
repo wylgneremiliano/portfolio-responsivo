@@ -67,6 +67,7 @@ export const AboutMe = styled.a`
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
+  border-radius: 5px;
   cursor: pointer;
   overflow-y: hidden;
 `;
