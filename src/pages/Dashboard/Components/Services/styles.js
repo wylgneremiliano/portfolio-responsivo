@@ -171,6 +171,10 @@ export const CardIndicator = styled.div`
   padding: 20px;
   flex-direction: column;
   min-width: 100px;
+  @media (max-width: 500px) {
+    padding: 15px;
+    min-width: 80px;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +194,9 @@ export const CardIndicator = styled.div`
 `;
 
 export const Line = styled.div`
-  width: 100px;
+  @media (max-width: 500px) {
+    width: 60px;
+  }
   height: 2px;
   background-color: #d863bb;
 `;
