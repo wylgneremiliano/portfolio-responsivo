@@ -26,16 +26,16 @@ export default function Work() {
       </Heading>
       <Content>
         <WorkBx>
-          <Image src={logo1}></Image>
+          <Image src={logo1} />
         </WorkBx>
         <WorkBx>
-          <Image src={logo2}></Image>
+          <Image src={logo2} />
         </WorkBx>
         <WorkBx>
-          <Image src={logo3}></Image>
+          <Image src={logo3} />
         </WorkBx>
         <WorkBx>
-          <Image src={logo4}></Image>
+          <Image src={logo4} />
         </WorkBx>
       </Content>
     </Container>

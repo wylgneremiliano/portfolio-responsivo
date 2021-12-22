@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import Button from "Components/Button";
+import Swal from "sweetalert2";
 
 export const Container = styled.section`
   padding: 100px 20px;
   margin-bottom: 100px;
-  background-color: #111;
+  background-color: #282a36;
 `;
 
 export const Content = styled.div`
@@ -16,6 +17,9 @@ export const ContactInfoBx = styled.div``;
 
 export const FormBx = styled.div`
   min-width: 60%;
+  @media (max-width: 500px) {
+    margin-top: 20px;
+  }
 `;
 
 export const ContactInfo = styled.div``;
@@ -29,7 +33,7 @@ export const Heading = styled.div`
   flex-direction: column;
   text-align: center;
   margin-bottom: 30px;
-  color: #111;
+  color: #282a36;
 `;
 export const ContactMe = styled.h1`
   font-weight: 600;

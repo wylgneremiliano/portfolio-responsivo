@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;
-  background: #000;
+  background: #282a36;
   background-size: cover;
   background-position: right;
   display: flex;
@@ -57,7 +57,7 @@ export const SubTitle = styled.h3`
 
 export const AboutMe = styled.a`
   position: relative;
-  background-color: #2196f3;
+  background-color: #d863bb;
   display: inline-block;
   color: #fff;
   margin-top: 20px;

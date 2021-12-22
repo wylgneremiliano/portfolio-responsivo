@@ -24,10 +24,10 @@ export const Container = styled.header`
     }
 
     ul li a {
-      color: #111;
+      color: #fff;
     }
     ul li {
-      color: #111;
+      color: #fff;
       font-size: 26px;
       margin: 20px;
     }
@@ -72,7 +72,7 @@ export const Column = styled.ul`
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: #fff;
+    background: #383a59;
     transition: 0.5s;
     z-index: 999;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -86,7 +86,7 @@ export const Toggle = styled(MenuIcon)`
     width: 40px;
     height: 40px;
     opacity: 1;
-    color: ${(props) => (props.scrollListener ? "#000" : "#fff")};
+    color: #fff;
     background-size: 30px;
     cursor: pointer;
   }
@@ -97,7 +97,7 @@ export const CloseButton = styled(CloseIcon)`
     width: 40px;
     height: 40px;
     opacity: 1;
-    color: ${(props) => (props.scrollListener ? "#000" : "#fff")};
+    color: #fff;
     background-size: 30px;
     cursor: pointer;
   }

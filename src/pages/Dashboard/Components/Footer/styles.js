@@ -4,6 +4,7 @@ export const Container = styled.footer`
   position: relative;
   width: 100%;
   background-color: #3586ff;
+  filter: hue-rotate(85deg);
   height: 200px;
   padding: 30px 50px;
   display: flex;

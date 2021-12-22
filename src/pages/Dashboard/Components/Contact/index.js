@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-
 import { Form } from "@unform/web";
 import Swal from "sweetalert2";
 import InputComponent from "Components/Input";
@@ -24,7 +23,12 @@ import {
 } from "./styles";
 import "./styles.css";
 import dogAnimation from "assets/dogAnimation.gif";
+
 export default function Contact() {
+  const [windowSize, setWindowSize] = useState(0);
+  useEffect(() => {
+    setWindowSize(window.innerWidth);
+  }, []);
   return (
     <Container id="contact">
       <Heading className="white">
@@ -40,13 +44,13 @@ export default function Contact() {
                 <LocationOnIcon />
               </Icon>
               <Text>
-                <ContactInfoH3 style={{ color: "#2196f3" }}>
+                <ContactInfoH3 style={{ color: "#d863bb" }}>
                   Endereço
                 </ContactInfoH3>
               </Text>
 
               <Paragraph>
-                Rua João XXIII, <br /> Lagoa Grande, Minas Gerais, <br /> 165
+                Lagoa Grande, Minas Gerais <br /> 38755000
               </Paragraph>
             </Box>
             <Box>
@@ -54,7 +58,7 @@ export default function Contact() {
                 <PhoneIcon />
               </Icon>
               <Text>
-                <ContactInfoH3 style={{ color: "#2196f3" }}>
+                <ContactInfoH3 style={{ color: "#d863bb" }}>
                   Telefone
                 </ContactInfoH3>
               </Text>
@@ -66,7 +70,7 @@ export default function Contact() {
                 <MailOutlineIcon />
               </Icon>
               <Text>
-                <ContactInfoH3 style={{ color: "#2196f3" }}>
+                <ContactInfoH3 style={{ color: "#d863bb" }}>
                   Email
                 </ContactInfoH3>
               </Text>
@@ -76,7 +80,6 @@ export default function Contact() {
         </ContactInfo>
         <FormBx>
           <Form className="formStyled">
-            <ContactInfoH3>Me envie</ContactInfoH3>
             <InputComponent
               type="text"
               name="full_name"
@@ -99,7 +102,8 @@ export default function Contact() {
             <ButtonCustom
               onClick={() =>
                 Swal.fire({
-                  confirmButtonColor: "#3586ff",
+                  width: windowSize < 500 ? "350px" : "500px",
+                  confirmButtonColor: "#d863bb",
                   title: "Mensagem recebida!",
                   backdrop: `rgba(0,0,0,0.7)
                   url("https://sweetalert2.github.io/images/nyan-cat.gif")

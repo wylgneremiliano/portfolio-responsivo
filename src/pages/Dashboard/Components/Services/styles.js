@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   padding: 100px;
-  background-color: #111;
-
   @media (max-width: 991px) {
     padding: 150px 50px 100px;
     h2 {
@@ -22,6 +20,7 @@ export const Container = styled.section`
       font-size: 15px;
     }
   }
+  background-color: #383a59;
 `;
 
 export const Heading = styled.div`
@@ -40,33 +39,186 @@ export const Paragraph = styled.p`
   color: #fff;
 `;
 
-export const Content = styled.div`
+export const Box = styled.div`
+  position: relative;
+
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
-  flex-direction: row;
 `;
-export const ServicesBx = styled.div`
-  padding: 40px 20px;
-  background-color: #222;
-  color: #fff;
-  max-width: 340px;
-  margin: 20px;
-  @media (max-width: 991px) {
-    margin: 10px;
-  }
-  @media (max-width: 500px) {
-    margin: 10px 0;
-  }
-  text-align: center;
+export const ServiceBox = styled.div`
+  position: relative;
   cursor: pointer;
-  :hover {
-    background-color: #2196f3;
+  width: 400px;
+  height: 300px;
+  background-color: #282a36;
+  border-radius: 10px;
+  overflow: hidden;
+  .icon ion-icon {
+    font-size: 5em;
+    color: #fff;
   }
+  :hover .icon ion-icon {
+    font-size: 2em;
+  }
+  :hover .icon img {
+    width: 2em;
+  }
+  :hover .icon h2 {
+    font-size: 18px;
+  }
+  :hover .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 30px;
+    left: calc(50% - 50px);
+  }
+  :hover div {
+    transform: scale(1);
+  }
+`;
+
+export const Icon = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+`;
+export const Content = styled.div`
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 120px;
+  z-index: 1;
+  transform: scale(0);
+  transition: 0.5s;
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
 `;
 
 export const Image = styled.img`
-  max-width: 80px;
-  filter: invert(1);
+  width: 5em;
+`;
+
+export const TurfContainer = styled.div`
+  background-color: #2ecd70;
+`;
+export const TurfText = styled.h2`
+  color: #fff;
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
+`;
+
+export const Ball = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  p {
+    font-size: 10px !important;
+    margin-top: 0 !important;
+    color: #b8b8b9 !important;
+  }
+  border-radius: 50%;
+  border: 2px solid
+    ${(props) =>
+      props.status === "complete"
+        ? "#D863BB"
+        : props.status === "active"
+        ? "#D863BB"
+        : "#8c8c8c"};
+  background-color: ${(props) =>
+    props.status === "complete"
+      ? "#D863BB"
+      : props.status === "active"
+      ? "#373737"
+      : "#373737"}; ;
+`;
+
+export const ProgressIndicator = styled.div`
+  width: 100%;
+  padding: 25px;
+  @media (max-width: 500px) {
+    padding: 25px 0;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+`;
+
+export const CardIndicator = styled.div`
+  padding: 20px;
+  flex-direction: column;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #282a36;
+  p {
+    font-size: 10px;
+
+    margin-top: 5px;
+    color: ${(props) =>
+      props.status === "complete"
+        ? "#B8B8B9"
+        : props.status === "active"
+        ? "#D863BB"
+        : "#ccc"};
+  }
+`;
+
+export const Line = styled.div`
+  width: 100px;
+  height: 2px;
+  background-color: #d863bb;
+`;
+
+export const ContainerBall = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 20px;
+  /* background-color: red; */
+`;
+
+export const BallInside = styled.div`
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid
+    ${(props) =>
+      props.status === "complete"
+        ? "#D863BB"
+        : props.status === "active"
+        ? "#D863BB"
+        : "#8c8c8c"};
+  background-color: ${(props) =>
+    props.status === "complete"
+      ? "#D863BB"
+      : props.status === "active"
+      ? "#373737"
+      : "#373737"}; ;
 `;

@@ -9,10 +9,10 @@ export const Container = styled.div`
   font-weight: bold;
   color: #fff;
   width: ${(props) => (props.width ? `${props.width}%` : "100%")};
-  background-color: #2196f3;
+  background-color: #d863bb;
   padding: 15px 5px;
   cursor: pointer;
   :hover {
-    background-color: ${shade(0.2, "#2196f3")};
+    background-color: ${shade(0.2, "#d863bb")};
   }
 `;

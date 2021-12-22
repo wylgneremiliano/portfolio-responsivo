@@ -78,6 +78,7 @@ export default function About() {
         </ContentBx>
         <W50>
           <Lottie
+            style={{ filter: "hue-rotate(85deg)" }}
             options={defaultOptions}
             height={400}
             width={400}
