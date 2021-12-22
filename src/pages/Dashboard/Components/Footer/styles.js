@@ -52,7 +52,8 @@ export const RedirectMenu = styled.a`
   display: inline-block;
   transition: 0.5s;
   @media (max-width: 510px) {
-    font-size: 13px;
+    font-size: 12px;
+    margin: 0 7px;
   }
   :hover {
     transform: translateY(-10px);
@@ -73,7 +74,7 @@ export const Paragraph = styled.p`
   color: #fff;
   margin-top: 10px;
   @media (max-width: 510px) {
-    font-size: 12px;
+    font-size: 11px;
   }
 `;
 
