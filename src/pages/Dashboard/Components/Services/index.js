@@ -24,7 +24,7 @@ import redux from "assets/redux.svg";
 import javascript from "assets/javascript.png";
 import git from "assets/git.png";
 import node from "assets/node.svg";
-import maps from "assets/maps.svg";
+import maps from "assets/maps.png";
 import mapbox from "assets/mapbox.png";
 export default function Works() {
   return (

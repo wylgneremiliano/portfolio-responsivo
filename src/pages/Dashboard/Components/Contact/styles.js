@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Button from "Components/Button";
-import Swal from "sweetalert2";
 
 export const Container = styled.section`
   padding: 100px 20px;

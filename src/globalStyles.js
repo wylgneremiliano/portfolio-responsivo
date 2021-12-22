@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
 
-    user-select: none;
+    
    ::-webkit-scrollbar {
     width: 7px;
     height: 7px;

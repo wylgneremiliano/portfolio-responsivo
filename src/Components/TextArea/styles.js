@@ -11,6 +11,7 @@ export const InputCustom = styled.textarea`
   background: #383a59;
   color: #fff;
   margin-bottom: 15px;
+
   border-radius: 5px;
   :focus {
     outline: none !important;
