@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import colors from "colors";
+
 export const Container = styled.header`
   display: flex;
   position: fixed;
@@ -24,10 +26,10 @@ export const Container = styled.header`
     }
 
     ul li a {
-      color: #fff;
+      color: ${colors.foreground};
     }
     ul li {
-      color: #fff;
+      color: ${colors.foreground};
       font-size: 26px;
       margin: 20px;
     }
@@ -42,7 +44,7 @@ export const Container = styled.header`
 `;
 export const Logo = styled.a`
   cursor: pointer;
-  color: #fff;
+  color: ${colors.foreground};
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
@@ -51,7 +53,7 @@ export const Logo = styled.a`
 `;
 export const Redirect = styled.a`
   text-decoration: none;
-  color: #fff;
+  color: ${colors.foreground};
   margin: 0 15px;
   transition: 0.5s;
   letter-spacing: 2px;
@@ -72,7 +74,7 @@ export const Column = styled.ul`
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: #383a59;
+    background: ${colors.comment};
     transition: 0.5s;
     z-index: 999;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -86,7 +88,7 @@ export const Toggle = styled(MenuIcon)`
     width: 40px;
     height: 40px;
     opacity: 1;
-    color: #fff;
+    color: ${colors.foreground};
     background-size: 30px;
     cursor: pointer;
   }
@@ -97,7 +99,7 @@ export const CloseButton = styled(CloseIcon)`
     width: 40px;
     height: 40px;
     opacity: 1;
-    color: #fff;
+    color: ${colors.foreground};
     background-size: 30px;
     cursor: pointer;
   }

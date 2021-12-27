@@ -9,7 +9,6 @@ import {
   Row,
   CloseButton,
 } from "./styles";
-import "./styles.css";
 export default function Header() {
   const [toogleButton, setToogleButton] = useState(false);
 

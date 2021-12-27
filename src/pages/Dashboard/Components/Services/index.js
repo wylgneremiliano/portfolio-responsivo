@@ -19,7 +19,6 @@ import {
   ContainerBall,
   BallInside,
 } from "./styles";
-import "./styles.css";
 import redux from "assets/redux.svg";
 import javascript from "assets/javascript.png";
 import git from "assets/git.png";

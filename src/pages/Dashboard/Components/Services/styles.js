@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import colors from "colors";
 
 export const Container = styled.section`
+  position: relative;
   padding: 100px;
   @media (max-width: 991px) {
     padding: 150px 50px 100px;
@@ -20,23 +22,26 @@ export const Container = styled.section`
       font-size: 15px;
     }
   }
-  background-color: #282a36;
+  .white {
+    color: ${colors.foreground};
+  }
+  background-color: ${colors.currentLine}; ;
 `;
 
 export const Heading = styled.div`
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  color: #111;
+  color: ${colors.background};
 `;
 export const AboutMe = styled.h2`
   font-weight: 600;
   font-size: 30px;
-  color: #fff;
+  color: ${colors.foreground}; ;
 `;
 
 export const Paragraph = styled.p`
-  color: #fff;
+  color: ${colors.foreground};
 `;
 
 export const Box = styled.div`
@@ -53,12 +58,12 @@ export const ServiceBox = styled.div`
   cursor: pointer;
   width: 400px;
   height: 300px;
-  background-color: #383a59;
+  background-color: ${colors.background};
   border-radius: 10px;
   overflow: hidden;
   .icon ion-icon {
     font-size: 5em;
-    color: #fff;
+    color: ${colors.foreground};
   }
   :hover .icon ion-icon {
     font-size: 2em;
@@ -97,7 +102,7 @@ export const Icon = styled.div`
 export const Content = styled.div`
   position: relative;
   padding: 20px;
-  color: #fff;
+  color: ${colors.text};
   text-align: center;
   margin-top: 120px;
   z-index: 1;
@@ -119,10 +124,10 @@ export const Image = styled.img`
 `;
 
 export const TurfContainer = styled.div`
-  background-color: #2ecd70;
+  background-color: ${colors.green};
 `;
 export const TurfText = styled.h2`
-  color: #fff;
+  color: ${colors.text};
   @media (max-width: 500px) {
     font-size: 15px;
   }
@@ -137,33 +142,40 @@ export const Ball = styled.div`
   p {
     font-size: 10px !important;
     margin-top: 0 !important;
-    color: #b8b8b9 !important;
+    color: ${colors.text} !important;
   }
+
   border-radius: 50%;
   border: 2px solid
     ${(props) =>
       props.status === "complete"
-        ? "#D863BB"
+        ? colors.pink
         : props.status === "active"
-        ? "#D863BB"
-        : "#8c8c8c"};
+        ? colors.pink
+        : colors.text};
   background-color: ${(props) =>
     props.status === "complete"
-      ? "#D863BB"
+      ? colors.pink
       : props.status === "active"
-      ? "#383A59"
-      : "#383A59"}; ;
+      ? colors.background
+      : colors.background};
 `;
 
 export const ProgressIndicator = styled.div`
-  width: 100%;
+  position: relative;
+  width: 40%;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 25px;
   @media (max-width: 500px) {
     padding: 25px 0;
+    width: 100%;
   }
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 30px;
 `;
 
@@ -179,26 +191,25 @@ export const CardIndicator = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: #383a59;
+  background-color: ${colors.background};
   p {
     font-size: 10px;
 
     margin-top: 5px;
     color: ${(props) =>
       props.status === "complete"
-        ? "#B8B8B9"
+        ? colors.text
         : props.status === "active"
-        ? "#D863BB"
-        : "#ccc"};
+        ? colors.pink
+        : colors.text};
   }
 `;
 
 export const Line = styled.div`
-  @media (max-width: 500px) {
-    width: 60px;
-  }
+  width: 100%;
+
   height: 2px;
-  background-color: #d863bb;
+  background-color: ${colors.pink};
 `;
 
 export const ContainerBall = styled.div`
@@ -207,7 +218,6 @@ export const ContainerBall = styled.div`
   justify-content: space-around;
   padding: 10px;
   margin-top: 20px;
-  /* background-color: red; */
 `;
 
 export const BallInside = styled.div`
@@ -217,14 +227,14 @@ export const BallInside = styled.div`
   border: 2px solid
     ${(props) =>
       props.status === "complete"
-        ? "#D863BB"
+        ? colors.pink
         : props.status === "active"
-        ? "#D863BB"
-        : "#8c8c8c"};
+        ? colors.pink
+        : colors.text};
   background-color: ${(props) =>
     props.status === "complete"
-      ? "#D863BB"
+      ? colors.pink
       : props.status === "active"
-      ? "#383A59"
-      : "#383A59"}; ;
+      ? colors.background
+      : colors.background};
 `;

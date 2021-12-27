@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import colors from "colors";
 
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;
-  background: #282a36;
+  background: ${colors.comment};
   background-size: cover;
   background-position: right;
   display: flex;
@@ -45,21 +46,21 @@ export const TextContainer = styled.div``;
 
 export const Title = styled.h2`
   font-size: 3em;
-  color: #fff;
+  color: ${colors.foreground};
   font-weight: 500;
   line-height: 1.5em;
 `;
 export const SubTitle = styled.h3`
-  color: #fff;
+  color: ${colors.foreground};
   font-weight: 500;
   line-height: 1.5em;
 `;
 
 export const AboutMe = styled.a`
   position: relative;
-  background-color: #d863bb;
+  background-color: ${colors.pink};
   display: inline-block;
-  color: #fff;
+  color: ${colors.foreground};
   margin-top: 20px;
   padding: 10px 30px;
   font-size: 18px;

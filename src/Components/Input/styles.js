@@ -1,21 +1,22 @@
 import styled from "styled-components";
 import { TextField } from "@mui/material";
 import { withStyles } from "@mui/styles";
+import colors from "colors";
 
 const CssTextField = withStyles({
   root: {
     "& label.Mui-focused": {
-      color: "#d863bb",
+      color: colors.pink,
     },
     "& .MuiInput-underline:after": {
-      borderBottomColor: "yellow",
+      borderBottomColor: colors.purple,
     },
     "& .MuiOutlinedInput-root": {
       "&.Mui-focused fieldset": {
-        borderColor: "#d863bb",
+        borderColor: colors.pink,
       },
       "&.Mui-hover fieldset": {
-        borderColor: "#d863bb",
+        borderColor: colors.pink,
       },
     },
   },
@@ -34,16 +35,16 @@ export const InputCustom = styled(CssTextField)`
   font-size: 16px;
   background: transparent;
   border: none;
-  background: #383a59;
-  color: #fff;
+  background: ${colors.comment};
+  color: ${colors.foreground};
   & .MuiInputLabel-root {
-    color: #e6e6e6;
+    color: ${colors.foreground};
   }
   :focus & .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
     outline: none !important;
-    border: 1px solid #d863bb;
+    border: 1px solid ${colors.pink};
   }
   & .MuiOutlinedInput-input {
-    color: #e6e6e6;
+    color: ${colors.foreground};
   }
 `;
