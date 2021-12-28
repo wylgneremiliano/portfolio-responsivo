@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import Button from "Components/Button";
-import colors from "colors";
 
 export const Container = styled.section`
   padding: 100px 20px;
   margin-bottom: 100px;
-  background-color: ${colors.currentLine};
+  background-color: ${(props) => props.theme.currentLine};
 `;
 
 export const Content = styled.div`
@@ -33,7 +32,7 @@ export const Heading = styled.div`
   flex-direction: column;
   text-align: center;
   margin-bottom: 30px;
-  color: ${colors.currentLine};
+  color: ${(props) => props.theme.currentLine};
 `;
 export const ContactMe = styled.h1`
   font-weight: 600;
@@ -42,13 +41,13 @@ export const ContactMe = styled.h1`
 export const ContactInfoH3 = styled.h3`
   font-size: 20px;
   margin-bottom: 5px;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   @media (max-width: 500px) {
     margin-bottom: 10px;
   }
 `;
 export const Paragraph = styled.p`
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   @media (max-width: 500px) {
     font-size: 14px;
   }
@@ -58,7 +57,7 @@ export const Icon = styled.div`
   position: absolute;
   left: 0;
   top: 5px;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
 `;
 
 export const Text = styled.div``;

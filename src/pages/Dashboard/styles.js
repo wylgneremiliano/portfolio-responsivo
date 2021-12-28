@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import colors from "colors";
 
 export const Container = styled.div`
-  background-color: ${colors.currentLine};
+  background-color: ${(props) => props.theme.currentLine};
   .sticky {
-    background: ${colors.background};
+    background: ${(props) => props.theme.background};
     padding: 20px 100px;
     transition: 0.5s;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);

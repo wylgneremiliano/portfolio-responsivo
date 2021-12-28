@@ -6,6 +6,7 @@ import { Form } from "@unform/web";
 import Swal from "sweetalert2";
 import InputComponent from "Components/Input";
 import TextAreaComponent from "Components/TextArea";
+
 import {
   Container,
   Content,
@@ -44,7 +45,7 @@ export default function Contact() {
                 <LocationOnIcon />
               </Icon>
               <Text>
-                <ContactInfoH3 style={{ color: "#d863bb" }}>
+                <ContactInfoH3 style={{ color: (props) => props.theme.pink }}>
                   Endereço
                 </ContactInfoH3>
               </Text>
@@ -58,7 +59,7 @@ export default function Contact() {
                 <PhoneIcon />
               </Icon>
               <Text>
-                <ContactInfoH3 style={{ color: "#d863bb" }}>
+                <ContactInfoH3 style={{ color: (props) => props.theme.pink }}>
                   Telefone
                 </ContactInfoH3>
               </Text>
@@ -70,7 +71,7 @@ export default function Contact() {
                 <MailOutlineIcon />
               </Icon>
               <Text>
-                <ContactInfoH3 style={{ color: "#d863bb" }}>
+                <ContactInfoH3 style={{ color: (props) => props.theme.pink }}>
                   Email
                 </ContactInfoH3>
               </Text>
@@ -97,15 +98,19 @@ export default function Contact() {
             <TextAreaComponent
               maxLength="500"
               placeholder="Sua mensagem"
-              style={{ width: "100%", color: "#fff" }}
+              style={{
+                width: "100%",
+                color: (props) => props.theme.foreground,
+              }}
               name="message"
             />
             <ButtonCustom
               onClick={() =>
                 Swal.fire({
                   width: windowSize < 500 ? "350px" : "500px",
-                  confirmButtonColor: "#d863bb",
+                  confirmButtonColor: (props) => props.theme.pink,
                   title: "Mensagem recebida!",
+
                   backdrop: `rgba(0,0,0,0.7)
                   url("https://sweetalert2.github.io/images/nyan-cat.gif")
                   left bottom

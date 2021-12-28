@@ -1,26 +1,25 @@
 import styled from "styled-components";
 import { TextField } from "@mui/material";
 import { withStyles } from "@mui/styles";
-import colors from "colors";
 
-const CssTextField = withStyles({
-  root: {
-    "& label.Mui-focused": {
-      color: colors.pink,
-    },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: colors.purple,
-    },
-    "& .MuiOutlinedInput-root": {
-      "&.Mui-focused fieldset": {
-        borderColor: colors.pink,
-      },
-      "&.Mui-hover fieldset": {
-        borderColor: colors.pink,
-      },
-    },
-  },
-})(TextField);
+// const CssTextField = withStyles({
+//   root: {
+//     "& label.Mui-focused": {
+//       color: (props) => props.theme.pink,
+//     },
+//     "& .MuiInput-underline:after": {
+//       borderBottomColor: (props) => props.theme.purple,
+//     },
+//     "& .MuiOutlinedInput-root": {
+//       "&.Mui-focused fieldset": {
+//         borderColor: (props) => props.theme.pink,
+//       },
+//       "&.Mui-hover fieldset": {
+//         borderColor: (props) => props.theme.pink,
+//       },
+//     },
+//   },
+// })(TextField);
 export const Container = styled.div`
   display: flex;
   margin-bottom: 15px;
@@ -28,23 +27,23 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const InputCustom = styled(CssTextField)`
+export const InputCustom = styled(TextField)`
   width: 100%;
   padding: 15px;
   border-radius: 5px;
   font-size: 16px;
   background: transparent;
   border: none;
-  background: ${colors.comment};
-  color: ${colors.foreground};
+  background: ${(props) => props.theme.comment};
+  color: ${(props) => props.theme.foreground};
   & .MuiInputLabel-root {
-    color: ${colors.foreground};
+    color: ${(props) => props.theme.foreground};
   }
   :focus & .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
     outline: none !important;
-    border: 1px solid ${colors.pink};
+    border: 1px solid ${(props) => props.theme.pink};
   }
   & .MuiOutlinedInput-input {
-    color: ${colors.foreground};
+    color: ${(props) => props.theme.foreground};
   }
 `;

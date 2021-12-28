@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from "colors";
 
 export const InputCustom = styled.textarea`
   resize: none;
@@ -9,13 +8,13 @@ export const InputCustom = styled.textarea`
   font-size: 16px;
   background: transparent;
   border: none;
-  background: ${colors.comment};
-  color: ${colors.foreground};
+  background: ${(props) => props.theme.comment};
+  color: ${(props) => props.theme.foreground};
   margin-bottom: 15px;
-  border: 1px solid ${colors.background};
+  border: 1px solid ${(props) => props.theme.background};
   border-radius: 5px;
   :focus {
     outline: none !important;
-    border: 2px solid ${colors.pink};
+    border: 2px solid ${(props) => props.theme.pink};
   }
 `;

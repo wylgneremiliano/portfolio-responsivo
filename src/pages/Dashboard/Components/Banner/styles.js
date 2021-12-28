@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import colors from "colors";
 
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;
-  background: ${colors.comment};
+  background: ${(props) => props.theme.comment};
   background-size: cover;
   background-position: right;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 100px;
   @media (max-width: 991px) {
@@ -27,7 +26,7 @@ export const Container = styled.section`
   }
   @media (max-width: 500px) {
     padding: 50px;
-
+    flex-direction: column;
     h2 {
       font-size: 1.2em;
     }
@@ -46,21 +45,21 @@ export const TextContainer = styled.div``;
 
 export const Title = styled.h2`
   font-size: 3em;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   font-weight: 500;
   line-height: 1.5em;
 `;
 export const SubTitle = styled.h3`
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   font-weight: 500;
   line-height: 1.5em;
 `;
 
 export const AboutMe = styled.a`
   position: relative;
-  background-color: ${colors.pink};
+  background-color: ${(props) => props.theme.pink};
   display: inline-block;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   margin-top: 20px;
   padding: 10px 30px;
   font-size: 18px;

@@ -1,5 +1,4 @@
 import { createTheme } from "@material-ui/core/styles";
-import colors from "colors";
 
 const theme = createTheme({
   overrides: {
@@ -7,7 +6,7 @@ const theme = createTheme({
       multiline: {
         fontWeight: "bold",
         fontSize: "20px",
-        color: colors.blue,
+        color: "#3586ff",
       },
     },
   },

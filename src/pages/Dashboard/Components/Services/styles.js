@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from "colors";
 
 export const Container = styled.section`
   position: relative;
@@ -23,25 +22,69 @@ export const Container = styled.section`
     }
   }
   .white {
-    color: ${colors.foreground};
+    color: ${(props) => props.theme.foreground};
   }
-  background-color: ${colors.currentLine}; ;
+  background-color: ${(props) => props.theme.currentLine};
 `;
 
 export const Heading = styled.div`
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  color: ${colors.background};
+  color: ${(props) => props.theme.background};
 `;
 export const AboutMe = styled.h2`
   font-weight: 600;
   font-size: 30px;
-  color: ${colors.foreground}; ;
+  color: ${(props) => props.theme.foreground};
 `;
 
 export const Paragraph = styled.p`
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
+`;
+
+export const OtherLibraries = styled.div`
+  position: relative;
+  width: 96.7%;
+  padding: 30px 0;
+  margin-top: 20px;
+  @media (max-width: 500px) {
+    p {
+      margin-right: 50px;
+    }
+  }
+  @media (max-width: 1400px) {
+    padding-left: 13.3%;
+  }
+
+  @media (min-width: 800px) {
+    margin-top: 50px;
+  }
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  p {
+    font-size: 15px;
+    color: ${(props) => props.theme.foreground};
+  }
+`;
+
+export const Libraries = styled.a`
+  cursor: pointer;
+
+  padding: 3px 7px;
+
+  @media (max-width: 500px) {
+    margin: 10px 0;
+    margin-right: 10px;
+  }
+
+  margin: 10px 0;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: ${(props) => props.theme.foreground};
+  background: ${(props) => props.theme.purple};
 `;
 
 export const Box = styled.div`
@@ -53,17 +96,18 @@ export const Box = styled.div`
   gap: 20px;
   flex-wrap: wrap;
 `;
-export const ServiceBox = styled.div`
+export const ServiceBox = styled.a`
   position: relative;
   cursor: pointer;
+  text-decoration: none;
   width: 400px;
   height: 300px;
-  background-color: ${colors.background};
+  background-color: ${(props) => props.theme.backgroundSecondary};
   border-radius: 10px;
   overflow: hidden;
   .icon ion-icon {
     font-size: 5em;
-    color: ${colors.foreground};
+    color: ${(props) => props.theme.foreground};
   }
   :hover .icon ion-icon {
     font-size: 2em;
@@ -84,8 +128,44 @@ export const ServiceBox = styled.div`
   :hover div {
     transform: scale(1);
   }
+  .one {
+    background-color: ${(props) => props.theme.background};
+  }
+  .two {
+    background-color: ${(props) => props.theme.foreground};
+  }
+  .three {
+    background-color: ${(props) => props.theme.yellowSecondary};
+  }
+  .four {
+    background-color: ${(props) => props.theme.blueSecondary};
+  }
+  .five {
+    background-color: ${(props) => props.theme.blueSecondary};
+  }
+  .six {
+    background-color: ${(props) => props.theme.cyan};
+  }
+  .seven {
+    background-color: ${(props) => props.theme.blue};
+  }
+  .eight {
+    background-color: ${(props) => props.theme.whiteLight};
+  }
 `;
+export const SpanCustom = styled.span`
+  color: ${(props) => props.theme.foreground};
+  position: absolute;
 
+  left: 0;
+  top: 0;
+  @media (min-width: 800px) {
+    top: 0px;
+  }
+  @media (max-width: 1400px) {
+    left: 13.7%;
+  }
+`;
 export const Icon = styled.div`
   position: absolute;
   top: 0;
@@ -102,7 +182,7 @@ export const Icon = styled.div`
 export const Content = styled.div`
   position: relative;
   padding: 20px;
-  color: ${colors.text};
+  color: ${(props) => props.theme.text};
   text-align: center;
   margin-top: 120px;
   z-index: 1;
@@ -114,7 +194,7 @@ export const Content = styled.div`
   }
   p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5em;
   }
 `;
@@ -124,92 +204,13 @@ export const Image = styled.img`
 `;
 
 export const TurfContainer = styled.div`
-  background-color: ${colors.green};
+  background-color: ${(props) => props.theme.cyan};
 `;
 export const TurfText = styled.h2`
-  color: ${colors.text};
+  color: ${(props) => props.theme.background};
   @media (max-width: 500px) {
     font-size: 15px;
   }
-`;
-
-export const Ball = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
-  p {
-    font-size: 10px !important;
-    margin-top: 0 !important;
-    color: ${colors.text} !important;
-  }
-
-  border-radius: 50%;
-  border: 2px solid
-    ${(props) =>
-      props.status === "complete"
-        ? colors.pink
-        : props.status === "active"
-        ? colors.pink
-        : colors.text};
-  background-color: ${(props) =>
-    props.status === "complete"
-      ? colors.pink
-      : props.status === "active"
-      ? colors.background
-      : colors.background};
-`;
-
-export const ProgressIndicator = styled.div`
-  position: relative;
-  width: 40%;
-
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 25px;
-  @media (max-width: 500px) {
-    padding: 25px 0;
-    width: 100%;
-  }
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 30px;
-`;
-
-export const CardIndicator = styled.div`
-  padding: 20px;
-  flex-direction: column;
-  min-width: 100px;
-  @media (max-width: 500px) {
-    padding: 15px;
-    min-width: 80px;
-  }
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background-color: ${colors.background};
-  p {
-    font-size: 10px;
-
-    margin-top: 5px;
-    color: ${(props) =>
-      props.status === "complete"
-        ? colors.text
-        : props.status === "active"
-        ? colors.pink
-        : colors.text};
-  }
-`;
-
-export const Line = styled.div`
-  width: 100%;
-
-  height: 2px;
-  background-color: ${colors.pink};
 `;
 
 export const ContainerBall = styled.div`
@@ -217,7 +218,7 @@ export const ContainerBall = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
 
 export const BallInside = styled.div`
@@ -227,14 +228,14 @@ export const BallInside = styled.div`
   border: 2px solid
     ${(props) =>
       props.status === "complete"
-        ? colors.pink
+        ? (props) => props.theme.pink
         : props.status === "active"
-        ? colors.pink
-        : colors.text};
+        ? (props) => props.theme.pink
+        : (props) => props.theme.text};
   background-color: ${(props) =>
     props.status === "complete"
-      ? colors.pink
+      ? (props) => props.theme.pink
       : props.status === "active"
-      ? colors.background
-      : colors.background};
+      ? (props) => props.theme.background
+      : (props) => props.theme.background};
 `;

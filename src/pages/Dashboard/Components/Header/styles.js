@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import colors from "colors";
 
 export const Container = styled.header`
   display: flex;
@@ -26,10 +25,10 @@ export const Container = styled.header`
     }
 
     ul li a {
-      color: ${colors.foreground};
+      color: ${(props) => props.theme.foreground};
     }
     ul li {
-      color: ${colors.foreground};
+      color: ${(props) => props.theme.foreground};
       font-size: 26px;
       margin: 20px;
     }
@@ -44,7 +43,7 @@ export const Container = styled.header`
 `;
 export const Logo = styled.a`
   cursor: pointer;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
@@ -53,7 +52,7 @@ export const Logo = styled.a`
 `;
 export const Redirect = styled.a`
   text-decoration: none;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   margin: 0 15px;
   transition: 0.5s;
   letter-spacing: 2px;
@@ -74,7 +73,7 @@ export const Column = styled.ul`
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: ${colors.comment};
+    background: ${(props) => props.theme.comment};
     transition: 0.5s;
     z-index: 999;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -88,7 +87,7 @@ export const Toggle = styled(MenuIcon)`
     width: 40px;
     height: 40px;
     opacity: 1;
-    color: ${colors.foreground};
+    color: ${(props) => props.theme.foreground};
     background-size: 30px;
     cursor: pointer;
   }
@@ -99,8 +98,27 @@ export const CloseButton = styled(CloseIcon)`
     width: 40px;
     height: 40px;
     opacity: 1;
-    color: ${colors.foreground};
+    color: ${(props) => props.theme.foreground};
     background-size: 30px;
     cursor: pointer;
+  }
+`;
+
+export const Box = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: ${(props) => props.theme.background};
+  padding: 40px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  width: 400;
+  h2 {
+    color: ${(props) => props.theme.text};
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  p {
+    color: ${(props) => props.theme.text};
   }
 `;

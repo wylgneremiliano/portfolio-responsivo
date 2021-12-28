@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import wave from "assets/wave.png";
-import colors from "colors";
+
 export const Container = styled.footer`
   position: relative;
   width: 100%;
-  background-color: ${colors.blue};
-  filter: hue-rotate(85deg);
+  background-color: ${(props) => props.theme.blue};
+
+  filter: hue-rotate(85deg) contrast(80%);
   height: 200px;
   padding: 30px 50px;
   display: flex;
@@ -35,8 +36,9 @@ export const SocialIconsLi = styled.li`
 
 export const Redirect = styled.a`
   font-size: 2em;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   margin: 0 10px;
+
   display: inline-block;
   transition: 0.5s;
 
@@ -47,7 +49,7 @@ export const Redirect = styled.a`
 
 export const RedirectMenu = styled.a`
   font-size: 20px;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   margin: 0 10px;
   text-decoration: none;
   display: inline-block;
@@ -72,7 +74,7 @@ export const Row = styled.li`
 `;
 
 export const Paragraph = styled.p`
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   margin-top: 10px;
   @media (max-width: 510px) {
     font-size: 11px;

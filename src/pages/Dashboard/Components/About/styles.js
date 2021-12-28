@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from "colors";
 
 export const Container = styled.section`
   padding: 100px;
@@ -25,13 +24,13 @@ export const Container = styled.section`
       font-size: 12px;
     }
   }
-  background-color: ${colors.background};
+  background-color: ${(props) => props.theme.background};
 `;
 export const Heading = styled.div`
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
 `;
 export const AboutMe = styled.h2`
   font-weight: 600;
@@ -71,13 +70,13 @@ export const ContentBx = styled.div`
 export const ContentH3 = styled.h3`
   font-size: 24px;
   margin-bottom: 30px;
-  color: ${colors.foreground}; ;
+  color: ${(props) => props.theme.foreground};
 `;
 
 export const Paragraph = styled.p`
   text-align: justify;
   text-justify: inter-word;
-  color: ${colors.foreground}; ;
+  color: ${(props) => props.theme.foreground};
 `;
 
 export const W50 = styled.div`
@@ -90,5 +89,5 @@ export const Redirect = styled.a`
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
 `;

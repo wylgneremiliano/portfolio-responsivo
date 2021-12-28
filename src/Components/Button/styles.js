@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { shade } from "polished";
-import colors from "colors";
 
 export const Container = styled.div`
   display: flex;
@@ -9,12 +8,15 @@ export const Container = styled.div`
   border: none;
   font-weight: bold;
   border-radius: 5px;
-  color: ${colors.foreground};
+  color: ${(props) => props.theme.foreground};
   width: ${(props) => (props.width ? `${props.width}%` : "100%")};
-  background-color: ${colors.pink};
+  background-color: ${(props) => props.theme.pink};
   padding: 15px 5px;
   cursor: pointer;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
   :hover {
-    background-color: ${shade(0.2, colors.pink)};
+    background-color: ${(props) => shade(0.2, props.theme.pink)};
   }
 `;
