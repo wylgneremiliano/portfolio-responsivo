@@ -10,7 +10,7 @@ import {
   Span,
   AnimationContainer,
 } from "./styles";
-import animationData from "assets/astronaut1.json";
+import animationData from "assets/astronaut2.json";
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -20,7 +20,7 @@ const defaultOptions = {
   },
 };
 export default function Banner() {
-  const [animationState, setAnimationState] = useState({
+  const [animationState] = useState({
     isStopped: false,
     isPaused: false,
   });
@@ -36,7 +36,6 @@ export default function Banner() {
       </TextContainer>
       <AnimationContainer>
         <Lottie
-          // style={{ filter: "hue-rotate(85deg)" }}
           options={defaultOptions}
           height={350}
           width={350}

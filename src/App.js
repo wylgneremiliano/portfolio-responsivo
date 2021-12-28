@@ -5,7 +5,7 @@ import { draculaTheme, lightTheme } from "colors";
 import { GlobalStyle } from "./globalStyles";
 
 function App() {
-  const [theme, setTheme] = useState("draculaTheme");
+  const [theme] = useState("draculaTheme");
   return (
     <ThemeProvider theme={theme === "draculaTheme" ? draculaTheme : lightTheme}>
       <GlobalStyle />

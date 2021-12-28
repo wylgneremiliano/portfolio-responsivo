@@ -23,7 +23,7 @@ const defaultOptions = {
   },
 };
 export default function About() {
-  const [animationState, setAnimationState] = useState({
+  const [animationState] = useState({
     isStopped: false,
     isPaused: false,
   });
