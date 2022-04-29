@@ -15,15 +15,6 @@ export const Container = styled.header`
   }
 
   @media (max-width: 991px) {
-    .sticky {
-      padding: 20px 50px;
-      z-index: 1000;
-    }
-
-    .sticky div {
-      padding: 30px 50px;
-    }
-
     ul li a {
       color: ${(props) => props.theme.foreground};
     }

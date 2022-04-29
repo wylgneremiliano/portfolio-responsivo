@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: ${(props) => props.theme.currentLine};
-  .sticky {
+  & .sticky {
     background: ${(props) => props.theme.background};
     padding: 20px 100px;
     transition: 0.5s;

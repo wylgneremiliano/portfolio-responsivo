@@ -2,27 +2,28 @@ footer #wave1 {
   z-index: 1000;
   opacity: 1;
   bottom: 0;
-  animation: animateWave 4s linear infinite;
+
+  animation: animateWave 4s ease-in-out infinite;
 }
 
 footer #wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
-  animation: animateWave_02 4s linear infinite;
+  animation: animateWave_02 4s ease-in-out infinite;
 }
 footer #wave3 {
   z-index: 1000;
   opacity: 0.3;
   bottom: 15px;
-  animation: animateWave 3s linear infinite;
+  animation: animateWave 3s ease-in-out infinite;
 }
 
 footer #wave4 {
   z-index: 999;
   opacity: 0.7;
   bottom: 10px;
-  animation: animateWave_02 3s linear infinite;
+  animation: animateWave_02 3s ease-in-out infinite;
 }
 @keyframes animateWave {
   0% {

@@ -27,11 +27,13 @@ export default function Header() {
   useEffect(() => {
     onScroll();
   }, [scrollListener]);
+
   const onScroll = () => {
     window.addEventListener("scroll", () => {
       setScrollListener(window.scrollY > 75);
     });
   };
+
   return (
     <>
       <Container background={scrollListener}>
