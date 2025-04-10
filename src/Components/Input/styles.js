@@ -1,25 +1,6 @@
 import styled from "styled-components";
 import { TextField } from "@mui/material";
-import { withStyles } from "@mui/styles";
 
-// const CssTextField = withStyles({
-//   root: {
-//     "& label.Mui-focused": {
-//       color: (props) => props.theme.pink,
-//     },
-//     "& .MuiInput-underline:after": {
-//       borderBottomColor: (props) => props.theme.purple,
-//     },
-//     "& .MuiOutlinedInput-root": {
-//       "&.Mui-focused fieldset": {
-//         borderColor: (props) => props.theme.pink,
-//       },
-//       "&.Mui-hover fieldset": {
-//         borderColor: (props) => props.theme.pink,
-//       },
-//     },
-//   },
-// })(TextField);
 export const Container = styled.div`
   display: flex;
   margin-bottom: 15px;

@@ -11,18 +11,12 @@ import Footer from "./Components/Footer";
 
 export default function Dashboard() {
   const [goingUp, setGoingUp] = useState(false);
-  const redirect = () => {
-    console.log(process.env.REACT_APP_REDIRECT);
-    if (!!process.env.REACT_APP_REDIRECT) {
-      window.location.href = process.env.REACT_APP_LINK
-        ? process.env.REACT_APP_LINK
-        : "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
-    }
-  };
+
   useEffect(() => {
-    // redirect();
+
     onScroll();
   }, [goingUp]);
+
   const onScroll = () => {
     window.addEventListener("scroll", () => {
       const header = document.querySelector("header");
@@ -37,7 +31,7 @@ export default function Dashboard() {
       <Banner />
       <About />
       <Services />
-      {/* <Work /> */}
+      <Work />
       <Contact />
       <Footer />
     </Container>

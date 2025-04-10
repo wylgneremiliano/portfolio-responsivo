@@ -8,8 +8,7 @@ import {
   Content,
   WorkBx,
   Image,
-  Redirect,
-  Btn,
+
 } from "./styles";
 import logo1 from "assets/product1.jpg";
 import logo2 from "assets/product2.jpg";
